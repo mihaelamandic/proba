@@ -1,1 +1,156 @@
+#define _CRT_SECURE_NO_WARNINGS
 
+//#include <stdio.h>
+//
+//int main(void) {
+//	int n;
+//	
+//	do {
+//		printf("Unos: ");
+//		scanf("%d", &n);
+//		printf("\n");
+//	} while (n < 5 || n > 25);
+//
+//	for (int i = 1; i <= n; i++) {
+//		for (int j = 1; j <= i; j++) {
+//			printf("*");
+//		}
+//		printf("\n");
+//	}
+//
+//	return 0;
+//}
+
+
+//#include <stdio.h>
+//
+//int main(void) {
+//
+//	int ispis;
+//	char upis;
+//	int a = 0;
+//	int b = 0;
+//	int c = 0;
+//	int d = 0;
+//	int f = 0;
+//
+//
+//
+//	printf("Ocijene:\n");
+//	do {
+//		scanf("%c", &upis);
+//
+//		if (upis == 'a' || upis == 'A')a++;
+//		else if (upis == 'b' || upis == 'B')b++;
+//		else if (upis == 'c' || upis == 'C')c++;
+//		else if (upis == 'd' || upis == 'D')d++;
+//		else if (upis == 'f' || upis == 'F')f++;
+//
+//	} while (upis != '!');
+//
+//
+//	for (ispis = 5; ispis >= 1; ispis--) {
+//		printf("\n ");
+//		switch (ispis) {
+//		case 1:
+//			printf("F: %d", f);
+//			break;
+//		case 2:
+//			printf("D: %d", d);
+//			break;
+//		case 3:
+//			printf("C: %d", c);
+//			break;
+//		case 4:
+//			printf("B: %d", b);
+//			break;
+//		case 5:
+//			printf("A: %d", a);
+//			break;
+//		}
+//	}
+//
+//	return 0;
+//}
+
+
+//#include <stdio.h>
+//#include <math.h>
+//
+//int main(void) {
+//	int unos,n;
+//	int brojac = 0;
+//
+//	do {
+//		scanf("%d", &unos);
+//		printf("\n");
+//	} while (unos < 1);
+//	n = unos;
+//	while (n != 0) {
+//		n /= 10;
+//		brojac++;
+//	}
+//	n = unos;
+//	
+//	for (brojac; brojac >= 1; brojac--) {
+//		n = unos / (pow(10,(brojac-1)));
+//		if(brojac != 1)printf("%d__", n);
+//		else printf("%d", n);
+//		
+//		unos = unos - (n*pow(10, (brojac - 1)));
+//	}
+//
+//	return 0;
+//}
+
+
+//#include <stdio.h>
+//
+//int main(void) {
+//	int brojac, broj;
+//	brojac = 0;
+//
+//	for (int i = 1; i <= 10; i++) {
+//		scanf("%d", &broj);
+//		if (broj % 2 == 0) {
+//			brojac++;
+//		}
+//	}
+//
+//	printf("postotak parnih: %d", brojac * 10);
+//	printf("%%");
+//
+//	return 0;
+//}
+
+//#include <stdio.h>
+//
+//int main(void) {
+//	char a, b, c,min;
+//
+//	scanf("%c %c %c", &a, &b, &c);
+//	if (a < b && a < c) {
+//		min = a;
+//		printf("0x%x\n0x%x", b, c);
+//	}
+//	else if (b < a && b < c) {
+//		min = b;
+//		printf("0x%x\n0x%x", a, c);
+//	}
+//	else {
+//		min = c;
+//		printf("0x%x\n0x%x", a, b);
+//	}
+//      
+//      if (min == c) { printf ("0x%x" , a - min);
+//                      printf("0x%x" , b - min);
+//                    }
+//      else if (min == b) { printf("0x%x" , a - min);
+//                      printf("0x%x" , c - min);    
+//                          }
+//
+//        else if (min == b) { printf("0x%x" , b - min);
+//                      printf("0x%x" , c - min);    
+//                          }
+//	return 0;
+//}
